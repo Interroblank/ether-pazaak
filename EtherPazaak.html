@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>EtherPazaak</title>
+    </head>
+    <body onload="init()">
+        <script src="MetaMask.js"></script>
+        <script src="EtherPazaak.js"></script>
+        <h1>EtherPazaak</h1>
+        <p>Interroblank, 2020</p>
+        <p>
+            Based on the minigame 'Pazaak' from the classic CRPG: 'Star Wars: Knights of the Old Republic'.
+        </p>
+        <p>
+            Enter the address of the 'EtherPazaak' contract: <input id="contractAddress" type="text" size="50">
+        </p>
+        <p>
+            <input id="join" type="button" value="Join Game">
+        </p>
+        <div class="container">
+            <div>
+                <p style="float: left">
+                </p>
+            </div>
+            <div>
+                <table border="1" style="float: left">
+                    <tr>
+                        <th><input id="board1sp1" type="button" value="[ ]"></th>
+                        <th><input id="board1sp2" type="button" value="[ ]"></th>
+                        <th><input id="board1sp3" type="button" value="[ ]"></th>
+                    </tr>
+                    <tr>
+                        <th><input id="board1sp4" type="button" value="[ ]"></th>
+                        <th><input id="board1sp5" type="button" value="[ ]"></th>
+                        <th><input id="board1sp6" type="button" value="[ ]"></th>
+                    </tr>
+                    <tr>
+                        <th><input id="board1sp7" type="button" value="[ ]"></th>
+                        <th><input id="board1sp8" type="button" value="[ ]"></th>
+                        <th><input id="board1sp9" type="button" value="[ ]"></th>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table border="1" style="float: none">
+                    <tr>
+                        <th><input id="board2sp1" type="button" value="[ ]"></th>
+                        <th><input id="board2sp2" type="button" value="[ ]"></th>
+                        <th><input id="board2sp3" type="button" value="[ ]"></th>
+                    </tr>
+                    <tr>
+                        <th><input id="board2sp4" type="button" value="[ ]"></th>
+                        <th><input id="board2sp5" type="button" value="[ ]"></th>
+                        <th><input id="board2sp6" type="button" value="[ ]"></th>
+                    </tr>
+                    <tr>
+                        <th><input id="board2sp7" type="button" value="[ ]"></th>
+                        <th><input id="board2sp8" type="button" value="[ ]"></th>
+                        <th><input id="board2sp9" type="button" value="[ ]"></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <table border="1" style="float: left">
+                    <tr>
+                        <th><input id="hand1sp1" type="button" value="[ ]"></th>
+                        <th><input id="hand1sp2" type="button" value="[ ]"></th>
+                        <th><input id="hand1sp3" type="button" value="[ ]"></th>
+                        <th><input id="hand1sp4" type="button" value="[ ]"></th>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table border="1" style="float: left">
+                    <tr>
+                        <th><input id="hand2sp1" type="button" value="[ ]"></th>
+                        <th><input id="hand2sp2" type="button" value="[ ]"></th>
+                        <th><input id="hand2sp3" type="button" value="[ ]"></th>
+                        <th><input id="hand2sp4" type="button" value="[ ]"></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <p>
+            &nbsp
+        </p>
+        <p>
+            Only the first player may start the game.
+        </p>
+        <p>
+            <input id="start" type="button" value="Start Game">
+        </p>
+        <p>
+            <input id="stand" type="button" value="Stand">
+        </p>
+        <p>
+            <input id="turn" type="button" value="End Turn">
+        </p>
+        <p>
+        <p>
+            Current Sum (Player 1):
+        </p>
+        <p id="sum1">
+            0
+        </p>
+        <p>
+            Current Sum (Player 2):
+        </p>
+        <p id="sum2">
+            0
+        </p>
+            Current Score (Player 1):
+        </p>
+        <p id="score1">
+            0
+        </p>
+        <p>
+            Current Score (Player 2):
+        </p>
+        <p id="score2">
+            0
+        </p>
+    </body>
+</html>
